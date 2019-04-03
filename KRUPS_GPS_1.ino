@@ -83,10 +83,10 @@ void loop() {
       
       Serial.println(F("Send SMS with location"));
       // send an SMS!
-        char sendto[11]= "8594462441";
+        char sendto[11]= "**********";
         char message[141];
         Serial.print(F("Send to #"));
-        Serial.println(F("8594462441"));
+        Serial.println(F("**********"));
         Serial.print(F("Sending location...."));
         Serial.println(gpsdata);
         if (!fona.sendSMS(sendto, gpsdata)) {
